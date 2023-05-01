@@ -11,9 +11,15 @@ public class Hepsiburada {
     }
 
     @FindBy(id = "myAccount")
+    public WebElement giris;
+    @FindBy(id = "login")
     public WebElement login;
     @FindBy(xpath = "//*[@id='formBasicEmail']")
     public WebElement email;
+    @FindBy(id = "txtUserName")
+    public WebElement emailGir;
+    @FindBy(id = "btnLogin")
+    public WebElement girisYap;
     @FindBy(id = "dropdown-basic-button")
     public WebElement verify;
     @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
